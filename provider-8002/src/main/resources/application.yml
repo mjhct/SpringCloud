@@ -1,11 +1,11 @@
 debug: true
 server:
-  port: 80
+  port: 8002
   servlet:
-    context-path: /consumer
+    context-path: /provider
 spring:
   application:
-    name: consumer-service
+    name: provider-service
   jackson:
     default-property-inclusion: non_null
     property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES

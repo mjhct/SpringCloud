@@ -11,6 +11,9 @@
         <module>../commons</module>
         <module>../consumer-80</module>
         <module>../provider-8001</module>
+        <module>../provider-8002</module>
+        <module>../server-eureka-7001</module>
+        <module>../server-eureka-7002</module>
     </modules>
     <packaging>pom</packaging>
 
