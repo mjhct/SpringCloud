@@ -1,10 +1,11 @@
-debug: true
+debug: false
 server:
   port: 8001
   servlet:
     context-path: /provider
 spring:
   application:
+    # 微服务名称
     name: provider-service
   jackson:
     default-property-inclusion: non_null
@@ -16,3 +17,8 @@ eureka:
       #defaultZone: http://eureka7001.com:7001/eureka/
       #集群版
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    # 微服务实例名称修改
+    instance-id: provider8001
+    # 显示ip地址
+    prefer-ip-address: true

@@ -13,8 +13,8 @@ public class ConsumerController {
     @Value("${server.port}")
     private String serverPort;
 
-    @GetMapping("/test01")
-    public String test01(){
+    @GetMapping("/hello")
+    public String hello(){
         return "Hello World!";
     }
 
