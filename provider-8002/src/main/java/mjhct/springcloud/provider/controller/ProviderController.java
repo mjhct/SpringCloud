@@ -1,7 +1,7 @@
-package mjhct.springcloud.provider.controllers;
+package mjhct.springcloud.provider.controller;
 
-import mjhct.springcloud.commons.entities.CommonCode;
-import mjhct.springcloud.commons.entities.CommonResult;
+import mjhct.springcloud.commons.entity.CommonCode;
+import mjhct.springcloud.commons.entity.CommonResult;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

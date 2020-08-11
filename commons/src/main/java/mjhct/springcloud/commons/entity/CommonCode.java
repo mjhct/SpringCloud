@@ -1,4 +1,4 @@
-package mjhct.springcloud.commons.entities;
+package mjhct.springcloud.commons.entity;
 
 public enum CommonCode {
 

@@ -1,4 +1,4 @@
-package mjhct.springcloud.commons.utils;
+package mjhct.springcloud.commons.util;
 
 import java.util.Random;
 
