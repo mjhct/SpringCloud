@@ -6,7 +6,7 @@ public class RandomUtil {
 
     private static final Random RANDOM = new Random();
 
-    private static final Integer defaultRange = 1000;
+    private static final Integer DEFAULT_RANGE = 1000;
 
     public static Random getRandom(){
         return RANDOM;
@@ -19,7 +19,7 @@ public class RandomUtil {
      */
     public static Integer getRandomInteger(Integer bound){
         if (bound == null || bound == 0){
-            return RANDOM.nextInt(defaultRange);
+            return RANDOM.nextInt(DEFAULT_RANGE);
         }
         return RANDOM.nextInt(bound);
     }
