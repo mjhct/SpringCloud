@@ -18,4 +18,15 @@ public class ProviderController {
         return new CommonResult(CommonCode.SUCCESS, serverPort);
     }
 
+    @GetMapping(value = "/timeout", produces = MediaType.APPLICATION_JSON_VALUE)
+    public CommonResult timeOut(){
+        try {
+            // 睡眠3秒超时
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return new CommonResult(CommonCode.SUCCESS, serverPort);
+    }
+
 }

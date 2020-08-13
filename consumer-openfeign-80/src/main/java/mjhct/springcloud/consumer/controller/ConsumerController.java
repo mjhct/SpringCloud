@@ -21,4 +21,9 @@ public class ConsumerController {
         return providerService.test();
     }
 
+    @GetMapping(value = "/timeout", produces = MediaType.APPLICATION_JSON_VALUE)
+    public CommonResult timeOut(){
+        return providerService.timeOut();
+    }
+
 }

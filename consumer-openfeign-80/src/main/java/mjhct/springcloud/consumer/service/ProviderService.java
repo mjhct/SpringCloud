@@ -12,4 +12,7 @@ public interface ProviderService {
     @GetMapping(value = "/provider/test")
     CommonResult test();
 
+    @GetMapping(value = "/provider/timeout")
+    CommonResult timeOut();
+
 }

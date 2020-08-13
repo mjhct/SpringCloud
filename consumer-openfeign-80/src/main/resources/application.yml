@@ -9,6 +9,11 @@ spring:
   jackson:
     default-property-inclusion: non_null
     property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES
+  cloud:
+    loadbalancer:
+      ribbon:
+        # false:关闭ribbon，使用SpringCloud的LoadBalance。
+        enabled: true #默认就是true
 eureka:
   client:
     # 不向注册中心注册自己
