@@ -23,10 +23,13 @@ eureka:
       #defaultZone: http://eureka7001.com:7001/eureka/
       #集群版
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
-# 详情参见官方文档https://cloud.spring.io/spring-cloud-static/spring-cloud-openfeign/2.2.0.RELEASE/reference/html/
+# openfeign详情参见官方文档https://cloud.spring.io/spring-cloud-static/spring-cloud-openfeign/2.2.0.RELEASE/reference/html/
 feign:
   client:
     config:
       default:
         readTimeout: 5000
         connectTimeout: 5000
+logging:
+  level:
+    mjhct.springcloud.consumer.service.ProviderService: DEBUG
