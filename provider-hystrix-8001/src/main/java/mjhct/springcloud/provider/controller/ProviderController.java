@@ -28,4 +28,9 @@ public class ProviderController {
         return provierService.providerTimeOut(id);
     }
 
+    @GetMapping(value = "/hystrix/circuitbreaker/{id}")
+    public String providerCircuitBreaker(@PathVariable("id") Integer id){
+        return provierService.providerCircuitBreaker(id);
+    }
+
 }
