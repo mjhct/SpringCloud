@@ -7,14 +7,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProviderServiceImpl {
 
-    private final int sleepTime = 5000;
+    private final int sleepTime = 3000;
 
     public String providerOk(Integer id){
         return "秒回服务:" + Thread.currentThread().getName() + ",id=" + id;
     }
 
     @HystrixCommand(fallbackMethod = "providerTimeOutHandler",commandProperties = {
-        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     public String providerTimeOut(Integer id){
         // int i = 10/0;
@@ -27,7 +27,7 @@ public class ProviderServiceImpl {
     }
 
     public String providerTimeOutHandler(Integer id){
-        return "兜底服务:" + Thread.currentThread().getName() + ",id=" + id;
+        return "兜底服务:" + Thread.currentThread().getName() + ",8001系统服务繁忙或运行出错,id=" + id;
     }
 
 }
