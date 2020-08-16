@@ -15,6 +15,7 @@
         <module>../server-eureka-7001</module>
         <module>../server-eureka-7002</module>
         <module>../consumer-openfeign-80</module>
+        <module>../provider-hystrix-8001</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,19 @@
+debug: true
+server:
+  port: 8001
+  servlet:
+    context-path: /provider
+spring:
+  application:
+    # 微服务名称
+    name: provider-hystrix-service
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES
+eureka:
+  client:
+    service-url:
+      #单机版
+      defaultZone: http://eureka7001.com:7001/eureka/
+      #集群版
+      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
