@@ -3,7 +3,7 @@ package mjhct.springcloud.provider.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProvierServiceImpl {
+public class ProviderServiceImpl {
 
     private final int sleepTime = 3000;
 
