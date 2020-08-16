@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Service
-@FeignClient("provider-hystrix-service")
+@FeignClient(name = "provider-hystrix-service", fallback = ProviderServiceImpl.class)
 public interface ProviderService {
 
     @GetMapping(value = "/provider/hystrix/ok/{id}")
