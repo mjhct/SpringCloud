@@ -17,6 +17,7 @@ public class ProviderServiceImpl {
         @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
     })
     public String providerTimeOut(Integer id){
+        // int i = 10/0;
         try {
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
