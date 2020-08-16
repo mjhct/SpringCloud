@@ -17,6 +17,7 @@
         <module>../consumer-openfeign-80</module>
         <module>../provider-hystrix-8001</module>
         <module>../consumer-openfeign-hystrix-80</module>
+        <module>../hystrix-dashboard-9001</module>
     </modules>
     <packaging>pom</packaging>
 

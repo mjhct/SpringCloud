@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>parent</artifactId>
+        <groupId>mjhct.springcloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hystrix-dashboard-9001</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+            <!--
+                这个SpringCloud版本默认的依赖2.2.3.RELEASE版本有BUG
+                https://github.com/Netflix-Skunkworks/hystrix-dashboard/issues/11
+                https://blog.csdn.net/oyc619491800/article/details/107420176
+                其实起决定性作用的是下面这个依赖包里面依赖的jquery，所以把它排除掉用别的版本就好了
+                好像2.2.3.RELEASE后依赖的jquery都是3.4.1；2.2.2.RELEASE依赖的还是2.1.1。
+             -->
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-cloud-netflix-hystrix-dashboard</artifactId>
+                    <groupId>org.springframework.cloud</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-hystrix-dashboard</artifactId>
+            <!-- 现在最新2.2.4.RELEASE版本报的跟视频里一样的错，用2.2.2.RELEASE就是正常的 -->
+            <version>2.2.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
