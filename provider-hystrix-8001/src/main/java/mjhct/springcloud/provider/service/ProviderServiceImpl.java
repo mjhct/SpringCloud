@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProviderServiceImpl {
 
-    private final int sleepTime = 3000;
+    private final int sleepTime = 5000;
 
     public String providerOk(Integer id){
         return "秒回服务:" + Thread.currentThread().getName() + ",id=" + id;
