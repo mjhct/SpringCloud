@@ -5,12 +5,18 @@ spring:
     name: gateway-service
   cloud:
     gateway:
+      discovery:
+        locator:
+          # 启用动态路由
+          enabled: true
       routes:
         - id: route_1
-          uri: http://localhost:8001
+          # uri: http://localhost:8001
+          # 配置文档https://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.2.0.RELEASE/reference/html/appendix.html
+          uri: lb://provider-service # lb使用负载均衡
           predicates:
             - Path=/provider/**
-            - Method=POST
+            #- Method=POST
 eureka:
   client:
     service-url:
