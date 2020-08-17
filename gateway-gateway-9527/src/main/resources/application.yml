@@ -15,6 +15,7 @@ spring:
           # 配置文档https://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.2.0.RELEASE/reference/html/appendix.html
           uri: lb://provider-service # lb使用负载均衡
           predicates:
+            # 更多断言看官网文档
             - Path=/provider/**
             #- Method=POST
 eureka:
