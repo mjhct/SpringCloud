@@ -16,3 +16,9 @@ eureka:
     service-url:
       #单机版
       defaultZone: http://eureka7001.com:7001/eureka/
+# 暴露监控端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
