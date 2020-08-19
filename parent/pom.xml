@@ -19,6 +19,7 @@
         <module>../consumer-openfeign-hystrix-80</module>
         <module>../hystrix-dashboard-9001</module>
         <module>../gateway-gateway-9527</module>
+        <module>../config-server-6001</module>
     </modules>
     <packaging>pom</packaging>
 
