@@ -8,9 +8,9 @@ spring:
       server:
         git:
           uri: https://github.com/mjhct/springcloud-config.git
-          search-paths:
+          search-paths: # 搜索路径
             - springcloud-config
-      label: master
+      label: master # 分支
 eureka:
   client:
     service-url:
