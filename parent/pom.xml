@@ -21,6 +21,7 @@
         <module>../gateway-gateway-9527</module>
         <module>../config-server-6001</module>
         <module>../config-client-6011</module>
+        <module>../config-client-6012</module>
     </modules>
     <packaging>pom</packaging>
 

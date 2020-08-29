@@ -11,8 +11,16 @@ spring:
           search-paths: # 搜索路径
             - springcloud-config
       label: master # 分支
+  #kafka:
+    #官方文档写是RabbitMQ示例配置，没有kafka的示例；只能看启动日志打印的参数了……
 eureka:
   client:
     service-url:
       #单机版
       defaultZone: http://eureka7001.com:7001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - bus-refresh
