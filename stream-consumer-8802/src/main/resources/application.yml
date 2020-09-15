@@ -1,9 +1,9 @@
 debug: true
 server:
-  port: 8801
+  port: 8802
 spring:
   application:
-    name: stream-provider
+    name: stream-consumer
   jackson:
     default-property-inclusion: non_null
     property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES
@@ -15,7 +15,7 @@ spring:
             - localhost
           defaultBrokerPort: 9092
       bindings:
-        output:
+        input:
           destination: myQueue
 eureka:
   client:

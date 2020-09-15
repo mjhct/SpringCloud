@@ -23,6 +23,7 @@
         <module>../config-client-6011</module>
         <module>../config-client-6012</module>
         <module>../stream-provider-8801</module>
+        <module>../stream-consumer-8802</module>
     </modules>
     <packaging>pom</packaging>
 
