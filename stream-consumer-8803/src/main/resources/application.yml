@@ -1,6 +1,6 @@
 debug: true
 server:
-  port: 8802
+  port: 8803
 spring:
   application:
     name: stream-consumer
