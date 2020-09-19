@@ -11,7 +11,7 @@ public class RestTemplateConfig {
     private final RestTemplate restTemplate = new RestTemplate();
 
     @Bean
-    // @LoadBalanced
+    @LoadBalanced
     public RestTemplate getRestTemplate(){
         return this.restTemplate;
     }
