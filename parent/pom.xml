@@ -26,6 +26,7 @@
         <module>../stream-consumer-8802</module>
         <module>../stream-consumer-8803</module>
         <module>../nacos-provider-9001</module>
+        <module>../nacos-provider-9002</module>
     </modules>
     <packaging>pom</packaging>
 
