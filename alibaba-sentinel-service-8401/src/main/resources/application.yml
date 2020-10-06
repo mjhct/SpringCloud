@@ -8,3 +8,9 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        #本应用接收sentinel规则的端口
+        port: 8719
+        #sentinel地址
+        dashboard: localhost:8080
