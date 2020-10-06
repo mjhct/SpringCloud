@@ -9,25 +9,26 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>../commons</module>
-        <module>../consumer-80</module>
-        <module>../provider-8001</module>
-        <module>../provider-8002</module>
-        <module>../server-eureka-7001</module>
-        <module>../server-eureka-7002</module>
-        <module>../consumer-openfeign-80</module>
-        <module>../provider-hystrix-8001</module>
-        <module>../consumer-openfeign-hystrix-80</module>
-        <module>../hystrix-dashboard-9001</module>
-        <module>../gateway-gateway-9527</module>
-        <module>../config-server-6001</module>
-        <module>../config-client-6011</module>
-        <module>../config-client-6012</module>
-        <module>../stream-provider-8801</module>
-        <module>../stream-consumer-8802</module>
-        <module>../stream-consumer-8803</module>
-        <module>../nacos-provider-9001</module>
-        <module>../nacos-provider-9002</module>
-        <module>../nacos-consumer-83</module>
+        <module>../cloud-consumer-80</module>
+        <module>../cloud-provider-8001</module>
+        <module>../cloud-provider-8002</module>
+        <module>../cloud-eureka-7001</module>
+        <module>../cloud-eureka-7002</module>
+        <module>../cloud-consumer-openfeign-80</module>
+        <module>../cloud-provider-hystrix-8001</module>
+        <module>../cloud-consumer-openfeign-hystrix-80</module>
+        <module>../cloud-hystrix-dashboard-9001</module>
+        <module>../cloud-gateway-gateway-9527</module>
+        <module>../cloud-config-server-6001</module>
+        <module>../cloud-config-client-6011</module>
+        <module>../cloud-config-client-6012</module>
+        <module>../cloud-stream-provider-8801</module>
+        <module>../cloud-stream-consumer-8802</module>
+        <module>../cloud-stream-consumer-8803</module>
+        <module>../alibaba-nacos-provider-9001</module>
+        <module>../alibaba-nacos-provider-9002</module>
+        <module>../alibaba-nacos-consumer-83</module>
+        <module>../alibaba-sentinel-service-8401</module>
     </modules>
     <packaging>pom</packaging>
 
