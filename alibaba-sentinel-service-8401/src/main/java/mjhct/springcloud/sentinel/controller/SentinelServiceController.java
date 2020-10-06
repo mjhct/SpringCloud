@@ -4,6 +4,7 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import mjhct.springcloud.commons.entity.CommonCode;
 import mjhct.springcloud.commons.entity.CommonResult;
+import mjhct.springcloud.sentinel.myhandler.CustomerBlockHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,10 +23,13 @@ public class SentinelServiceController {
     }
 
     @GetMapping(value = "/hello")
+    @SentinelResource(value = "hello",
+            blockHandlerClass = CustomerBlockHandler.class,
+            blockHandler = "handle1")
     public CommonResult hello() {
         logger.info("hello");
 //        int age = 10 / 0; 测试异常导服务降级
-        return new CommonResult(CommonCode.SUCCESS);
+        return new CommonResult(CommonCode.SUCCESS, "hello");
     }
 
     @GetMapping(value = "/hk")
