@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <description>模块名意思：网关-SpringCloudGateway;以后还有阿里巴巴的网关组件</description>
 
-    <artifactId>gateway-gateway-9527</artifactId>
+    <artifactId>cloud-gateway-9527</artifactId>
 
     <dependencies>
         <dependency>

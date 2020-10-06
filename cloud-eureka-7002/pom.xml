@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>server-eureka-7002</artifactId>
+    <artifactId>cloud-eureka-7002</artifactId>
 
     <dependencies>
         <dependency>

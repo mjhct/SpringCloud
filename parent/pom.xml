@@ -18,7 +18,7 @@
         <module>../cloud-provider-hystrix-8001</module>
         <module>../cloud-consumer-openfeign-hystrix-80</module>
         <module>../cloud-hystrix-dashboard-9001</module>
-        <module>../cloud-gateway-gateway-9527</module>
+        <module>../cloud-gateway-9527</module>
         <module>../cloud-config-server-6001</module>
         <module>../cloud-config-client-6011</module>
         <module>../cloud-config-client-6012</module>

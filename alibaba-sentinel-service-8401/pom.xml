@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sentinel-8401</artifactId>
+    <artifactId>alibaba-sentinel-service-8401</artifactId>
 
     <dependencies>
         <dependency>

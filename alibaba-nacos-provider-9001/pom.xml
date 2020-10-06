@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nacos-provider-9001</artifactId>
+    <artifactId>alibaba-nacos-provider-9001</artifactId>
 
     <dependencies>
         <dependency>
