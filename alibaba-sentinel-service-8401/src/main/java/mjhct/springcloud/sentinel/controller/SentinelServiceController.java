@@ -14,6 +14,13 @@ public class SentinelServiceController {
 
     @GetMapping(value = "/test")
     public CommonResult test() {
+        logger.info("test");
+        return new CommonResult(CommonCode.SUCCESS);
+    }
+
+    @GetMapping(value = "/hello")
+    public CommonResult hello() {
+        logger.info("hello");
         return new CommonResult(CommonCode.SUCCESS);
     }
 
