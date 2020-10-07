@@ -16,6 +16,14 @@ spring:
         port: 8719
         #sentinel地址
         dashboard: localhost:8080
+      datasource:
+        ds1:
+          nacos:
+            serverAddr: localhost:8848
+            dataId: ${spring.application.name}
+            groupId: DEFAULT_GROUP
+            dataType: json
+            ruleType: flow
 feign:
   sentinel:
     enabled: true
