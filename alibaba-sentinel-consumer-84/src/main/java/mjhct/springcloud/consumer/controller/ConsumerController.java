@@ -27,7 +27,10 @@ public class ConsumerController {
     // 文档https://github.com/alibaba/Sentinel/wiki/%E6%B3%A8%E8%A7%A3%E6%94%AF%E6%8C%81
 //    @SentinelResource(value = "consumerData", fallback = "getDataFallBack")
 //    @SentinelResource(value = "consumerData", blockHandler = "getDataBlockHandler")
-    @SentinelResource(value = "consumerData", fallback = "getDataFallBack", blockHandler = "getDataBlockHandler")
+    @SentinelResource(value = "consumerData",
+            fallback = "getDataFallBack",
+            blockHandler = "getDataBlockHandler",
+            exceptionsToIgnore = {IllegalArgumentException.class})
     public CommonResult getData(@PathVariable(value = "id") Integer id) {
         logger.info("消费者");
         if (id > 10) {
