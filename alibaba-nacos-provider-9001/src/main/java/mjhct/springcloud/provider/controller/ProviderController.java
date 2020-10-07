@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -20,6 +21,12 @@ public class ProviderController {
     public CommonResult test(){
         logger.info("服务提供者{}", serverPort);
         return new CommonResult(CommonCode.SUCCESS, serverPort);
+    }
+
+    @GetMapping("/data/{id}")
+    public CommonResult getData(@PathVariable(value = "id") Integer id){
+        logger.info("服务提供者{}", serverPort);
+        return new CommonResult(CommonCode.SUCCESS, serverPort + "获取数据" + id);
     }
 
 }
