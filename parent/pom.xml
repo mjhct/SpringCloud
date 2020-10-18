@@ -30,6 +30,9 @@
         <module>../alibaba-nacos-consumer-83</module>
         <module>../alibaba-sentinel-service-8401</module>
         <module>../alibaba-sentinel-consumer-84</module>
+        <module>../alibaba-seata-order-10101</module>
+        <module>../alibaba-seata-account-10103</module>
+        <module>../alibaba-seata-storage-10102</module>
     </modules>
     <packaging>pom</packaging>
 
